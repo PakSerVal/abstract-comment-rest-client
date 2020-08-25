@@ -1,0 +1,23 @@
+{
+    "name": "abstract-comment-api/php-rest-client",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "6.5.x-dev",
+        "phpunit/phpunit": "^7.5",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "pakman\\RestClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "pakman\\RestClient\\tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "donatj/mock-webserver": "dev-master"
+    }
+}
