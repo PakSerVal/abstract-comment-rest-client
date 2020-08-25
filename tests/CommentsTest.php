@@ -74,9 +74,9 @@ class CommentsTest extends ApiTestCase
         $this->assertEquals('POST', $this->server->getLastRequest()->jsonSerialize()[RequestInfo::JSON_KEY_METHOD]);
         $this->assertEquals(json_encode(['name' => $newComment['name'], 'text' => $newComment['text']]), $this->server->getLastRequest()->jsonSerialize()[RequestInfo::JSON_KEY_INPUT]);
 
-//        $this->expectException(ClientException::class);
-//        $this->expectExceptionCode(400);
-//        $this->getCommentApiClient()->create('', '');
+        $this->expectException(ClientException::class);
+        $this->expectExceptionCode(400);
+        $this->getCommentApiClient()->create('', '');
     }
 
     public function testUpdateComment() : void
