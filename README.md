@@ -15,7 +15,7 @@ use pakman\RestClient\ClientBuilder;
 $commentApi = ClientBuilder::createCommentApiClient('example.com');
 
 $comment = $commentApi->create('User name', 'User comment');
-$commentApi->update($comment->id, 'User name', 'User comment');
+$commentApi->update($comment->id, 'User updated name', 'User updated comment');
 
 $comments = $commentApi->getList();
 foreach ($comments as $comment)
