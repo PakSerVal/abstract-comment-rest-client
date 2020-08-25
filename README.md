@@ -12,7 +12,7 @@ composer require abstract-comment-api/php-rest-client
 ```php
 use pakman\RestClient\ClientBuilder;
 
-$commentApi = ClientBuilder::createCommentApiClient('example.com');
+$commentApi = ClientBuilder::createCommentApiClient('https://example.com');
 
 $comment = $commentApi->create('User name', 'User comment');
 $commentApi->update($comment->id, 'User updated name', 'User updated comment');
