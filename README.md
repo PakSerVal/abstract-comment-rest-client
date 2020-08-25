@@ -5,7 +5,7 @@
 ## Установка
 
 ```bash
-composer require pakman/abstract-comment-rest-client
+composer require abstract-comment-api/php-rest-client
 ```
 
 #### Пример использования
